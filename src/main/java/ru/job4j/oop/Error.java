@@ -6,7 +6,6 @@ public class Error {
     private String message;
 
     public Error() {
-        message = "not found";
     }
 
     public Error(boolean active, int status, String message) {
