@@ -6,8 +6,6 @@ public class Error {
     private String message;
 
     public Error() {
-        active = true;
-        status = 404;
         message = "not found";
     }
 
@@ -29,9 +27,6 @@ public class Error {
         System.out.println();
         Error error1 = new Error(true, 400, "Bad Request");
         error1.printInfo();
-        System.out.println();
-        Error error2 = new Error(false, 0, "Yes");
-        error2.printInfo();
     }
 
 }
