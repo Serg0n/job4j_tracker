@@ -17,7 +17,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void whenCantBe(){
+    public void whenCantBe() {
         Point a = new Point(0, 0);
         Point b = new Point(0, 3);
         Point c = new Point(0, 4);
