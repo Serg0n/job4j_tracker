@@ -53,8 +53,8 @@ public class PointTest {
     @Test
     public void whenDistanceWithDecimalPointsThenCorrectDistance() {
         Point a = new Point(8, 5, 6);
-        Point b = new Point(4, 6, 5);
-        double expected = 4.0;
+        Point b = new Point(8, -5, 5);
+        double expected = 10.05;
         double output = a.distance3d(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
