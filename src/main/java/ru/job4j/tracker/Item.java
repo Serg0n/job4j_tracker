@@ -3,12 +3,10 @@ package ru.job4j.tracker;
 import java.time.LocalDateTime;
 
 public class Item {
-    // Поля
     private int id;
     private String name;
     private LocalDateTime created = LocalDateTime.now();
 
-    // Конструкторы
     public Item() {
     }
 
@@ -21,7 +19,6 @@ public class Item {
         this.name = name;
     }
 
-    // Методы
     public int getId() {
         return id;
     }
