@@ -54,5 +54,4 @@ class StartUITest {
         Item deleted = tracker.findById(item.getId());
         assertThat(deleted).isNull();
     }
-
 }
