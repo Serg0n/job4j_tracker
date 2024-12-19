@@ -15,7 +15,7 @@ public class Library {
             Book book = books[index];
             System.out.println(book.getName() + " - " + book.getCount());
         }
-        System.out.println("Replace Java and Python");
+        System.out.println("ReplaceAction Java and Python");
         Book temp = books[0];
         books[0] = books[3];
         books[3] = temp;
