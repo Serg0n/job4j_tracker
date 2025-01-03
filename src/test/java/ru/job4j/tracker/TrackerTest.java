@@ -39,7 +39,7 @@ public class TrackerTest {
         tracker.add(new Item("Second"));
         tracker.add(new Item("First"));
         List<Item> result = tracker.findByName(first.getName());
-        assertThat(result.size()).isEqualTo(3); // Используем size(), а не length
+        assertThat(result.size()).isEqualTo(3);
     }
 
     @Test
@@ -85,7 +85,7 @@ public class TrackerTest {
         tracker.add(item);
         int id = item.getId();
         tracker.delete(id);
-        assertThat(tracker.findById(id)).isNull(); // Убедитесь, что элемент удален
+        assertThat(tracker.findById(id)).isNull();
     }
 
     @Test
@@ -93,7 +93,7 @@ public class TrackerTest {
         Tracker tracker = new Tracker();
         Item item = new Item("Bug");
         tracker.add(item);
-        tracker.delete(1000); // Попытка удалить несуществующий id
-        assertThat(tracker.findById(item.getId()).getName()).isEqualTo("Bug"); // Элемент не должен быть удален
+        tracker.delete(1000);
+        assertThat(tracker.findById(item.getId()).getName()).isEqualTo("Bug");
     }
 }

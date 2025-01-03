@@ -20,7 +20,7 @@ public class Tracker {
     public List<Item> findByName(String key) {
         List<Item> result = new ArrayList<>();
         for (Item item : items) {
-            if (key.equals(item.getName())) { // Исправлено: вызов getName() на элементе
+            if (key.equals(item.getName())) {
                 result.add(item);
             }
         }
