@@ -14,7 +14,9 @@ public class ConvertList2Array {
             if (cell == cells - 1) {
                 cell = 0;
                 row++;
-            } else {
+                continue;
+            }
+            if (row != groups - 1) {
                 cell++;
             }
         }
