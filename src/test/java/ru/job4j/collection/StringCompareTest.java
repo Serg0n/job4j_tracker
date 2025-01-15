@@ -91,7 +91,7 @@ public class StringCompareTest {
                 "Ivanov",
                 "ivanov"
         );
-        assertThat(result).isLessThan(0); // Заглавная буква меньше строчной
+        assertThat(result).isLessThan(0);
     }
 
     @Test
@@ -101,7 +101,7 @@ public class StringCompareTest {
                 "Test",
                 "Testing"
         );
-        assertThat(result).isLessThan(0); // "Test" короче, чем "Testing"
+        assertThat(result).isLessThan(0);
     }
 
     @Test
@@ -111,6 +111,6 @@ public class StringCompareTest {
                 "Apple",
                 "Banana"
         );
-        assertThat(result).isLessThan(0); // 'A' меньше 'B'
+        assertThat(result).isLessThan(0);
     }
 }
