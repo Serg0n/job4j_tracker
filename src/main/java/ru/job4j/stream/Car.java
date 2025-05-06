@@ -75,7 +75,6 @@ public class Car {
                 .buildBrand("BMW")
                 .buildModel("Model 1")
                 .buildCreated(LocalDate.of(1881, 7, 8))
-                .buildVolume(0.5)
                 .buildColor("Ржавчина")
                 .build();
         System.out.println(car2);
